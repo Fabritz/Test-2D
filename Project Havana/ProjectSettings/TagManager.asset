@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Pared
+  - Hueco
+  - Piso
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Piso
+    uniqueID: 608646813
+    locked: 0
+  - name: Hueco
+    uniqueID: 1005632337
+    locked: 0
+  - name: Pared
+    uniqueID: 4042681303
     locked: 0
