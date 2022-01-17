@@ -50,3 +50,6 @@ TagManager:
   - name: Pared
     uniqueID: 4042681303
     locked: 0
+  - name: Jugador
+    uniqueID: 850304025
+    locked: 0
