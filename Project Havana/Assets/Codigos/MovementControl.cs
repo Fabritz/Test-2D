@@ -10,15 +10,19 @@ public class MovementControl : MonoBehaviour
 
     private Vector2 moveDirection;
 
+    [SerializeField] GameObject arma;
+
     // Update is called once per frame
     void Update()
     {
         ProcessInputs();
+        atacar();
     }
 
     private void FixedUpdate()
     {
         Move();
+        
     }
 
     void ProcessInputs()
@@ -31,6 +35,14 @@ public class MovementControl : MonoBehaviour
 
     void Move()
     {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        rb.velocity = new Vector2(moveDirection.x * moveSpeed*Time.deltaTime, moveDirection.y * moveSpeed*Time.deltaTime);
+    }
+
+    void atacar()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(arma,this.gameObject.transform);
+        }
     }
 }

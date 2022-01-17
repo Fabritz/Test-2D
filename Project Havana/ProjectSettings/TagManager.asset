@@ -38,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Piso
     uniqueID: 608646813
     locked: 0
@@ -52,4 +49,10 @@ TagManager:
     locked: 0
   - name: Jugador
     uniqueID: 850304025
+    locked: 0
+  - name: item
+    uniqueID: 2360539075
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
